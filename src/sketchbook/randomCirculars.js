@@ -8,15 +8,15 @@ let y = 370;
 let startAngle;
 let endAngle;
 
-for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 10; i++) {
     startAngle = Math.random();
     endAngle = Math.random();
-    radius = 20 * i;
+    radius = 35 * i;
 
     context.beginPath();
     context.arc(x, y, radius, startAngle, endAngle);
     context.stroke();
-    context.lineWidth = Math.random( 1, 7);
+    context.lineWidth = Math.floor(Math.random() * 5);
 }
 
 // Your drawing code ends here
