@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+//import { draw } from './sketchbook/drawingOne.js'; // Import the draw function from drawingOne.js
+//import { draw } from './sketchbook/drawingTwo.js'; // Import the draw function from drawingTwo.js
+import { draw } from './sketchbook/randomCirculars.js'; // Import the draw function from randomCirculars.js
+//import { draw } from './sketchbook/Scratchpad.js'; // Import the draw function from Scratchpad.js
+
+
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    // Access the canvas and its context after the component is mounted
+    let canvas = document.querySelector('.canvas');
+    let context = canvas.getContext('2d');
+
+    // Call the Draw function from Drawing.js
+    draw(canvas, context);
+
+  }, []); // Empty dependency array ensures the effect runs only once after mounting
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <canvas className="canvas" width="1000" height="1000"></canvas>
     </div>
   );
 }
