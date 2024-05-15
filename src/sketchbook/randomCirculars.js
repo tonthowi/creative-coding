@@ -6,7 +6,7 @@ let radius;
 let x = 500;
 let y = 370;
 let startAngle = 0;
-let endAngle = Math.PI * 2;
+let endAngle;
 
 for (let i = 0; i < 8; i++) {
     startAngle = Math.random();
