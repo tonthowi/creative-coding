@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 //import { draw } from './sketchbook/drawingOne.js'; // Import the draw function from drawingOne.js
-//import { draw } from './sketchbook/drawingTwo.js'; // Import the draw function from drawingTwo.js
-import { draw } from './sketchbook/randomCirculars.js'; // Import the draw function from randomCirculars.js
+import { draw } from './sketchbook/drawingTwo.js'; // Import the draw function from drawingTwo.js
+//import { draw } from './sketchbook/randomCirculars.js'; // Import the draw function from randomCirculars.js
 //import { draw } from './sketchbook/Scratchpad.js'; // Import the draw function from Scratchpad.js
 
 
